@@ -6,10 +6,12 @@
 			border:#000000 2px solid;
 			background-color: Lime;
 		}
+		#sprites{
+			display: none;
+		}
 	</style>
 
-	<script src=code.js>
-	</script>
+	
 	
 </head>
 <body onload="int()">
@@ -19,10 +21,19 @@
 	</center>
 	<center>
 		<canvas id="screen" width="1000" height="600">
-			<p>Sorry your browser doesnt support this game
-				Please update
-			</p>
+			<p>Sorry your browser doesnt support this game. Please update </p>
 		</canvas>
 	</center>
+
+	<!-- incase browser doesnt have javascript-->
+	<noscript>
+		<h3>This Game requires, Please enable Javascript or update browser</h3>
+	</noscript>
+	
+	<img src='res/sprites.png' id="sprites">	</img>
+
+	<script src=code.js language="Javascript" tpye="text/Javascript">
+	</script>
+
 </body>
 <html>
